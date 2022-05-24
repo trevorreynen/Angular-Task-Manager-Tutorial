@@ -1,0 +1,43 @@
+// Import Fonts
+// For Open Sans, Roboto, Roboto Condensed, Ubuntu, I selected the styles listed below for each.
+// Regular 400  |  Regular 400 Italic  |  Bold 700  |  Bold 700 Italic
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+// Color Variables.
+$red-main: #ad1216;
+$red-light-main: rgba(173, 18, 23, 0.2);
+$dark-red-main: #68022a;
+$dark-red-main-2: #821721;
+$dark-main: #141213;
+$light-main: #f8f8f8;
+
+
+// Update Bulma's Global Variables.
+$family-sans-serif: 'Roboto', sans-serif;
+$primary: $red-main;
+
+
+// Update some of Bulma's Component Variables.
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+
+// Set Custom Global Styles (Will be applied to whole app).
+html {
+    background: linear-gradient(to bottom right, $dark-red-main, $red-main, $dark-red-main);
+}
+
+html, body {
+    height: 100%;
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+

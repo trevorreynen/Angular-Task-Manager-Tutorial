@@ -1,0 +1,24 @@
+I had to restart this project and hopefully I don't run into the same problem that I had previously. Could not figure out what the problem was (yet). Hopefully, as I am redoing the tutorial I will find out what the problem was when the time comes.
+
+Tutorial YT Playlist: https://youtube.com/playlist?list=PLIjdNHWULhPSZFDzQU6AnbVQNNo1NTRpd
+
+Required before starting Video 2/Part 2:
+    1. npm install -g @angular/cli
+    2. Install MongoDB (link in README, not needed till Part 3)
+    3. Install Postman (link in README, not needed till Part 3)
+
+
+
+Tue. 05/24/22', 4:30 PM | PC
+    In a new terminal shell opened to project folder:
+        ng new frontend --style=scss --routing=true
+        cd frontend
+        npm install bulma --save
+        ng g c pages/TaskView
+        ng serve
+
+    Part 2 Completed around 5:05 PM. Uploading progress to GitHub.
+
+
+
+
