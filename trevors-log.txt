@@ -10,15 +10,36 @@ Required before starting Video 2/Part 2:
 
 
 Tue. 05/24/22', 4:30 PM | PC
-    In a new terminal shell opened to project folder:
+    In a new terminal shell opened to project root folder:
         ng new frontend --style=scss --routing=true
         cd frontend
         npm install bulma --save
         ng g c pages/TaskView
         ng serve
 
-    Part 2 Completed around 5:05 PM. Uploading progress to GitHub.
+    Part 2 completed around 5:05 PM. Uploading progress to GitHub.
+    Part 3 started around 5:15 PM.
+
+    Created folder in project root called 'api'
+
+    Opened new terminal shell to project root folder:
+        cd api
+        npm init        - NOTE: Pressed enter through all questions asked after running npm init
+        npm install express --save
+        nodemon app.js
+
+        npm install mongoose --save
+
+    Got to Part 3 adding code to mongoose.js.
 
 
+
+Thu. 05/26/22', 1:27 PM | PC
+    Continuing at Part 3 note left above.
+
+    Within Angular-Task-Manager-Tutorial/api directory:
+        npm install body-parser --save
+
+    Finished Part 3 at 2:19 PM. Moving on to Part 4 now.
 
 

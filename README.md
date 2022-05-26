@@ -14,13 +14,11 @@ Throughout the tutorial, I added personal notes to a file called "trevors-log.tx
    - [GitHub Desktop](https://desktop.github.com/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Node.js (v16.15.0 LTS)](https://nodejs.org/en/)
-   - npm install -g @angular/cli    (Allows use of 'ng' command needed)
-- [Postman (v9.18.3)](https://www.postman.com/downloads/)
-- [MongoDB Community Server (v5.0.8)](https://www.mongodb.com/try/download/community/)
-   - Download the **MongoDB Community Server**.
 - [Angular](https://angular.io/)
    - [Angular CLI](https://angular.io/cli)
    - All Angular components are v13.3.x.
 - [Bulma CSS Framework](https://bulma.io/)
+- [Postman (v9.18.3)](https://www.postman.com/downloads/)
+- [MongoDB Community Server (v5.0.8)](https://www.mongodb.com/try/download/community/)
 
 ---
