@@ -54,6 +54,21 @@ Thu. 05/26/22', 1:27 PM | PC
 
     Finished Part 4 at 2:46 PM. Moving on to Part 5 now.
 
+    Within the third terminal shell mentioned above:
+        ng generate component pages/new-list
+
+    Part 5 finished at 3:34 PM. Everything working so far. No problems like previously.
+    Going to CTRL+C the api and frontend directory servers respectively and close EVERYTHING I have open in Windows.
+    Will add to log shortly after reopening everything and starting servers to see if it's still working.
+
+    I ran into the problem, began doing a massive breakdown into the problem, what it is, and how I can approach fixing it. I found in the comments in Part 7 that this problem is addressed in Part 10. Which it is, Part 10 at ~1:15 in the video shows the if else statement that will completely negate the error. Problem solved.
+
+    Going to upload to GitHub and then move on to Part 6 and Part 7.
+
+    Considering this project is a complete redo of Part 1-5 but because last time I was dumb and instead of trying to reseach into the problem more just redid the project in a new GitHub repository, I am going to delete the previous GitHub reposity. This one is more organized since I knew what I was doing leading up to this point.
+
+
+
 
 
 

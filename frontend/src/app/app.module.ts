@@ -6,12 +6,14 @@ import { AppComponent } from './app.component'
 import { HttpClientModule } from '@angular/common/http'
 
 import { TaskViewComponent } from './pages/task-view/task-view.component'
+import { NewListComponent } from './pages/new-list/new-list.component'
 
 
 @NgModule({
     declarations: [
         AppComponent,
-        TaskViewComponent
+        TaskViewComponent,
+        NewListComponent
     ],
     imports: [
         BrowserModule,
