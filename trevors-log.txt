@@ -42,4 +42,20 @@ Thu. 05/26/22', 1:27 PM | PC
 
     Finished Part 3 at 2:19 PM. Moving on to Part 4 now.
 
+    Current active terminal shells:
+        #1: ./Angular-Task-Manager-Tutorial/api/ :
+            running "nodemon app.js"
+        #2: ./Angular-Task-Manager-Tutorial/frontend/ :
+            running "ng serve"
+
+    I just created a third terminal shell in ./Angular-Task-Manager-Tutorial/frontend/ and:
+        ng generate service Task
+        ng generate service WebRequest
+
+    Finished Part 4 at 2:46 PM. Moving on to Part 5 now.
+
+
+
+
+
 

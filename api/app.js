@@ -11,9 +11,16 @@ const { Task } = require('./db/models/task.model')
 
 
 /** =============== MIDDLEWARE =============== **/
+
 // Load Middlewear.
 app.use(bodyParser.json())
 
+// CORS Headers Middlewear.
+app.use(function(request, response, next) {
+    response.header('Access-Control-Allow-Origin', '*')
+    response.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
+    next()
+})
 
 /** ============= END MIDDLEWARE ============= **/
 
