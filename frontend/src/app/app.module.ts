@@ -6,9 +6,9 @@ import { AppComponent } from './app.component'
 import { HttpClientModule } from '@angular/common/http'
 
 import { TaskViewComponent } from './pages/task-view/task-view.component'
-import { NewListComponent } from './pages/new-list/new-list.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NewListComponent } from './pages/new-list/new-list.component'
 import { NewTaskComponent } from './pages/new-task/new-task.component'
+import { SigninPageComponent } from './pages/signin-page/signin-page.component'
 
 
 @NgModule({
@@ -16,13 +16,13 @@ import { NewTaskComponent } from './pages/new-task/new-task.component'
         AppComponent,
         TaskViewComponent,
         NewListComponent,
-        NewTaskComponent
+        NewTaskComponent,
+        SigninPageComponent
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
-        HttpClientModule,
-        FontAwesomeModule
+        HttpClientModule
     ],
     providers: [],
     bootstrap: [AppComponent]

@@ -107,3 +107,17 @@ Fri. 05/27/22', 4:05 PM | PC
 
     Finished Part 8 at 4:50 PM. Uploading progress to GitHub and moving on to Part 9.
 
+
+
+Fri. 05/27/22', 4:55 PM | PC
+    Continuing with Part 9.
+
+    Within terminal #3:
+        ng g c pages/SigninPage
+
+    Turns out I am retarded. Part 9 ~2:35 timestamp he shows the simplest way to add font awesome to the application, where I used ng to add it and then would have had to add every specific icon I wanted to use manually in the component.ts for every component.html using an icon.
+    I deleted @fortawesome folder from node_modules and removed anything related to "fort" and therefore "fortawesome" from files like package.js.
+
+    From now on, when wanting to use a icon, search this link: https://fontawesome.com/v5/search?s=solid
+
+    Since the PArt 9 video is 1 hour long, I stopped at 12:55 for today. Hopefully I can actually get good sleep tonight and wake up with plenty of energy unlike the past few weeks.

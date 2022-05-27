@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 import { ActivatedRoute, Params } from '@angular/router'
 import { TaskService } from 'src/app/task.service'
-import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import { Task } from 'src/app/models/task.model'
 import { List } from 'src/app/models/list.model'
 
@@ -12,8 +11,6 @@ import { List } from 'src/app/models/list.model'
     styleUrls: ['./task-view.component.scss']
 })
 export class TaskViewComponent implements OnInit {
-    faPlus = faPlus // Imports faPlus icon for task-view.component.html.
-
     lists!: List[]
     tasks!: Task[]
 

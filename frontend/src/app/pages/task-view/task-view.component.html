@@ -10,7 +10,10 @@
                 </a>
             </div>
 
-            <button class="button is-light has-text-weight-bold" routerLink="/new-list">Create New List</button>
+            <div class="buttons">
+                <button class="button is-fullwidth is-primary has-text-weight-bold" routerLink="/new-list">New List</button>
+                <button class="button is-fullwidth is-light" routerLink="/signin">Sign In</button>
+            </div>
         </div>
 
         <div class="task-list-container has-background-light">
@@ -22,7 +25,7 @@
                 </div>
             </div>
 
-            <button class="button circle-add-button" routerLink="./new-task"><fa-icon [icon]="faPlus"></fa-icon></button>
+            <button class="button circle-add-button" routerLink="./new-task"><i class="fas fa-plus"></i></button>
         </div>
 
     </div>
