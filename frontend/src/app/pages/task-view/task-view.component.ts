@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core'
 import { ActivatedRoute, Params } from '@angular/router'
 import { TaskService } from 'src/app/task.service'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import { Task } from 'src/app/models/task.model'
+import { List } from 'src/app/models/list.model'
 
 
 @Component({
@@ -12,8 +14,8 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons'
 export class TaskViewComponent implements OnInit {
     faPlus = faPlus // Imports faPlus icon for task-view.component.html.
 
-    lists: any
-    tasks: any
+    lists!: List[]
+    tasks!: Task[]
 
     constructor(private taskService: TaskService, private route: ActivatedRoute) {}
 
@@ -24,13 +26,22 @@ export class TaskViewComponent implements OnInit {
                     this.tasks = tasks
                 })
             } else {
-                this.tasks = undefined
+                this.tasks = undefined!
             }
         })
 
         this.taskService.getLists().subscribe((lists: any) => {
             //console.log(lists) // Shows object of all lists on the "homepage" in the console.
             this.lists = lists
+        })
+    }
+
+    // Sets a task to completed.
+    onTaskClick(task: Task) {
+        this.taskService.completed(task).subscribe(() => {
+            // Task has been set to completed successfully.
+            //console.log('Completed successfully') // This will appear in console when clicking on a task to mark it as completed
+            task.completed = !task.completed
         })
     }
 }

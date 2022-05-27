@@ -94,3 +94,16 @@ Fri. 05/27/22', 1:10 PM | PC
 
     Part 7 now complete at 2:30 PM. Going to upload progress to GitHub, take a short break, and continue.
 
+
+
+Fri. 05/27/22', 4:05 PM | PC
+    Continuing with Part 8.
+
+    !NOTE: from here on, instead of me repeating "still using the 3 terminal shells I normally use, lets just always assume it's implied unless otherwise noted.
+
+
+    TODO: Add a Working With Project section to readme. Include setup when coding (the 3 terminals) and also how to install/setup the project. Also, explain working with MongoDB community server downloaded application.
+
+
+    Finished Part 8 at 4:50 PM. Uploading progress to GitHub and moving on to Part 9.
+

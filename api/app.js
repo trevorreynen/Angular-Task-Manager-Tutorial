@@ -18,6 +18,7 @@ app.use(bodyParser.json())
 // CORS Headers Middlewear.
 app.use(function(request, response, next) {
     response.header('Access-Control-Allow-Origin', '*')
+    response.header('Access-Control-Allow-Methods', 'GET, POST, HEAD, OPTIONS, PUT, PATCH, DELETE')
     response.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
     next()
 })
@@ -150,7 +151,8 @@ app.patch('/lists/:listId/tasks/:taskId', (request, response) => {
             $set: request.body
         })
         .then(() => {
-            response.sendStatus(200)
+            //response.sendStatus(200) // This was and will prevent changing a tasks state from not completed to completed when clicking on it.
+            response.send({ message: 'Updated successfully.' })
         })
         .catch((error) => {
             console.log('An error has occurred for app.PATCH(/lists/:listId/tasks/:taskId).')
