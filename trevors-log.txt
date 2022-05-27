@@ -67,10 +67,30 @@ Thu. 05/26/22', 1:27 PM | PC
 
     Considering this project is a complete redo of Part 1-5 but because last time I was dumb and instead of trying to reseach into the problem more just redid the project in a new GitHub repository, I am going to delete the previous GitHub reposity. This one is more organized since I knew what I was doing leading up to this point.
 
+    As it's 4:45 PM and it took me a good hour today trying to figure out my error, I will continue this tomorrow, not today.
 
 
 
+Fri. 05/27/22', 1:10 PM | PC
+    Starting with Part 6. Hopefully I get to Part 10 today before I sleep whenever that may be.
 
+    Started with the three main terminal shells:
+    #1: ./Angular-Task-Manager-Tutorial/api>:
+        nodemon app.js
+    #2: ./Angular-Task-Manager-Tutorial/frontend>:
+        ng serve
 
+    I decided to add font-awesome, might come in use. Followed this link: https://www.npmjs.com/package/@fortawesome/angular-fontawesome
+    #3: ./Angular-Task-Manager-Tutorial/frontend>:
+        ng add @fortawesome/angular-fontawesome@
+            I selected Font Awesome 6 and Free Solid Icons, Free Regular Icons, Free Brands Icons.
+            https://fontawesome.com/search?m=free&s=regular%2Csolid%2Cbrands  <-- All Free Solid, Regular, and Brands Icons.
 
+    Part 6 done at 1:40. Took a bit longer since I decided to add font-awesome instead of using anything else.
+    Moving on to Part 7 without uploading to GitHub because Part 6 was only a few lines of code.
+
+    Within the 3rd terminal shell:
+        ng generate component pages/new-task
+
+    Part 7 now complete at 2:30 PM. Going to upload progress to GitHub, take a short break, and continue.
 
