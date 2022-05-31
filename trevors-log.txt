@@ -3,7 +3,8 @@ I had to restart this project and hopefully I don't run into the same problem th
 Tutorial YT Playlist: https://youtube.com/playlist?list=PLIjdNHWULhPSZFDzQU6AnbVQNNo1NTRpd
 
 Required before starting Video 2/Part 2:
-    1. npm install -g @angular/cli
+    1.1. npm install -g @angular/cli
+    1.2. npm install -g nodemon
     2. Install MongoDB (link in README, not needed till Part 3)
     3. Install Postman (link in README, not needed till Part 3)
 
@@ -120,4 +121,35 @@ Fri. 05/27/22', 4:55 PM | PC
 
     From now on, when wanting to use a icon, search this link: https://fontawesome.com/v5/search?s=solid
 
-    Since the PArt 9 video is 1 hour long, I stopped at 12:55 for today. Hopefully I can actually get good sleep tonight and wake up with plenty of energy unlike the past few weeks.
+    Since the Part 9 video is 1 hour long, I stopped at 12:55 for today. Hopefully I can actually get good sleep tonight and wake up with plenty of energy unlike the past few weeks.
+
+
+
+Sun. 05/29/22', 2:03 PM | PC Reset to Windows 11
+    Within a terminal shell at /api/:
+        npm install lodash --save
+        npm install jsonwebtoken --save
+
+    Just too tired today to continue this. Stopped video at 21:10 exactly.
+
+
+
+Mon. 05/30/22', ~3:15 PM | PC
+    Within terminal shell at /api/:
+        npm install bcryptjs --save
+
+    Stopped at 47.30
+
+
+
+Tue. 05/31/22', 1:00 PM | PC
+
+    Took a break around 3:30 PM. Back now at 5:20 PM.
+
+    Part 9 finally finished. Time: 6:11 PM.
+    Took so long because I experienced a few errors, many being syntax errors caused by me. The consistency with the words being used are a bit too consistent, causing me to type "refresh" as "referesh" and "session" when it's supposed to be "sessions" and vice versa. In reality, I would never do the same thing this person does for the tutorial, but it's a tutorial. For example: this person uses the word "title" for both the list title, which is understandable, but also the task body within the list is also considered "title". That should be a different name but it's w/e.
+
+    Uploading progress so far and moving on to part 10.
+
+
+
