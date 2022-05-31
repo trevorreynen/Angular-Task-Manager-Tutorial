@@ -4,7 +4,7 @@
 
         <div class="field">
             <p class="control has-icons-left has-icons-right">
-                <input class="input has-background-light" type="email" placeholder="Email" />
+                <input class="input has-background-light" type="email" placeholder="Email" #emailInput />
 
                 <span class="icon is-small is-left">
                     <i class="fas fa-envelope"></i>
@@ -14,7 +14,7 @@
 
         <div class="field">
             <p class="control has-icons-left">
-                <input class="input has-background-light" type="password" placeholder="Password" />
+                <input class="input has-background-light" type="password" placeholder="Password" #passwordInput />
 
                 <span class="icon is-small is-left">
                     <i class="fas fa-lock"></i>
@@ -23,7 +23,7 @@
         </div>
 
         <div class="field is-grouped is-grouped-right">
-            <p class="control"><a class="button is-success has-text-white">Sign In</a></p>
+            <p class="control"><a class="button is-success has-text-white" (click)="onSigninButtonClicked(emailInput.value, passwordInput.value)">Sign In</a></p>
             <p class="control"><a class="button is-light" routerLink="/">Cancel</a></p>
         </div>
 

@@ -153,3 +153,12 @@ Tue. 05/31/22', 1:00 PM | PC
 
 
 
+Tue. 05/31/22', 6:20 PM
+    Working on Part 10.
+
+    Within a terminal shell at /frontend/:
+        ng g s Auth                     (ng generate service <name>)
+        ng g s WebReqInterceptor
+
+    Part 10 finished at 7:33 PM. Uploading progress to GitHub and continuing tomorrow.
+

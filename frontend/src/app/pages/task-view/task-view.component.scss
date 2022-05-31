@@ -87,7 +87,7 @@
     }
 }
 
-.task-list-container > .tmp .task:first-child {
+.task-list-container > .task-menu .task:first-child {
     margin-top: 0px;
 }
 
@@ -99,6 +99,11 @@
     right: 35px;
     border: none;
     border-radius: 50%;
+}
+
+.empty-state-text {
+    font-size: 20px;
+    text-align: center;
 }
 
 

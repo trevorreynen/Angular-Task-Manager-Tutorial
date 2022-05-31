@@ -12,20 +12,28 @@
 
             <div class="buttons">
                 <button class="button is-fullwidth is-primary has-text-weight-bold" routerLink="/new-list">New List</button>
-                <button class="button is-fullwidth is-light" routerLink="/signin">Sign In</button>
+                <button class="button is-fullwidth is-light" style="margin-bottom: 0px;" routerLink="/signin">Sign In</button>
             </div>
         </div>
 
         <div class="task-list-container has-background-light">
-            <h1 class="title has-text-primary">Tasks</h1>
+            <div *ngIf="tasks">
+                <h1 class="title has-text-primary">Tasks</h1>
 
-            <div class="tmp">
-                <div class="task" *ngFor="let task of tasks" (click)="onTaskClick(task)" [ngClass]="{ 'completed': task.completed }">
-                    <p>{{ task.title }}</p>
+                <div class="task-menu">
+                    <div class="task" *ngFor="let task of tasks" (click)="onTaskClick(task)" [ngClass]="{ 'completed': task.completed }">
+                        <p>{{ task.title }}</p>
+                    </div>
+
+                    <p class="empty-state-text" *ngIf="tasks.length === 0">There are no tasks in this list! Add one by pressing the add button below.</p>
                 </div>
+
+                <button class="button circle-add-button" routerLink="./new-task"><i class="fas fa-plus"></i></button>
             </div>
 
-            <button class="button circle-add-button" routerLink="./new-task"><i class="fas fa-plus"></i></button>
+            <div *ngIf="!tasks">
+                <p class="empty-state-text">Please select a list from the sidebar</p>
+            </div>
         </div>
 
     </div>
