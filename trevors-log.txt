@@ -153,7 +153,7 @@ Tue. 05/31/22', 1:00 PM | PC
 
 
 
-Tue. 05/31/22', 6:20 PM
+Tue. 05/31/22', 6:20 PM | PC
     Working on Part 10.
 
     Within a terminal shell at /frontend/:
@@ -162,3 +162,9 @@ Tue. 05/31/22', 6:20 PM
 
     Part 10 finished at 7:33 PM. Uploading progress to GitHub and continuing tomorrow.
 
+
+
+Wed. 06/01/22', 5:38 PM | PC
+    Working on Part 11
+
+    Part 11 finished at 6:58 PM. Uploading to GitHub and then going to start working on Part 12 as much as I can.

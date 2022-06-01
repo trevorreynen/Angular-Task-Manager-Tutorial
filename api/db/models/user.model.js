@@ -139,6 +139,10 @@ UserSchema.statics.hasRefreshTokenExpired = (expiresAt) => {
     }
 }
 
+UserSchema.statics.getJWTSecret = () => {
+    return jwtSecret
+}
+
 
 
 /** =============== MIDDLEWARE =============== */
