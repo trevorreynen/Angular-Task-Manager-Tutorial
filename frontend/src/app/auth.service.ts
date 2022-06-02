@@ -11,12 +11,24 @@ import { WebRequestService } from './web-request.service'
 export class AuthService {
     constructor(private webService: WebRequestService, private router: Router, private http: HttpClient) {}
 
+    signup(email: string, password: string) {
+        return this.webService.signup(email, password).pipe(
+            shareReplay(),
+            tap((response: HttpResponse<any>) => {
+                // The auth tokens will be in the header of this response.
+                this.setSession(response.body._id, response.headers.get('x-access-token')!, response.headers.get('x-refresh-token')!)
+                console.log('Successfully signed up and signed in.')
+            })
+        )
+    }
+
     signin(email: string, password: string) {
         return this.webService.signin(email, password).pipe(
             shareReplay(),
             tap((response: HttpResponse<any>) => {
                 // The auth tokens will be in the header of this response.
                 this.setSession(response.body._id, response.headers.get('x-access-token')!, response.headers.get('x-refresh-token')!)
+                console.log('Successfully signed in.')
             })
         )
     }

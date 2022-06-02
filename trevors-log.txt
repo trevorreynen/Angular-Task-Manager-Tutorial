@@ -181,12 +181,16 @@ Thu. 06/02/22', 8:45 AM | Laptop
 Thu. 06/02/22', around 4:00 PM | PC
     Working on Part 12.
 
-    Finished Part 12 at 5:27 PM.
-    Uploading progress to GitHub.
+    Finished Part 12 at 5:27 PM. Uploading progress to GitHub.
 
 
 
+Thu. 06/02/22', at 5:30 PM | PC
+    Begin working on Part 13
 
+    Within a terminal shell at /frontend/:
+        ng g c pages/signup-page
 
+    Part 13 finished at 5:46 PM. Uploading progress to GitHub.
 
 

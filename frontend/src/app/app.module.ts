@@ -10,6 +10,7 @@ import { NewListComponent } from './pages/new-list/new-list.component'
 import { NewTaskComponent } from './pages/new-task/new-task.component'
 import { SigninPageComponent } from './pages/signin-page/signin-page.component'
 import { WebReqInterceptor } from './web-req.interceptor'
+import { SignupPageComponent } from './pages/signup-page/signup-page.component'
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { WebReqInterceptor } from './web-req.interceptor'
         TaskViewComponent,
         NewListComponent,
         NewTaskComponent,
-        SigninPageComponent
+        SigninPageComponent,
+        SignupPageComponent
     ],
     imports: [
         BrowserModule,
