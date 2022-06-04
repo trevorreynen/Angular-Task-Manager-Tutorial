@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
     width: 250px;
-    padding: 42px;
+    padding: 40px;
     border-radius: 8px 0px 0px 8px;
 }
 
@@ -21,9 +21,19 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding: 42px;
+    padding: 40px;
     position: relative;
     border-radius: 0px 8px 8px 0px;
+
+    .top-bar {
+        display: flex;
+        margin-bottom: 20px;
+
+        .title {
+            flex-grow: 1;
+            margin: 0px;
+        }
+    }
 }
 
 .title {
@@ -40,10 +50,12 @@
         display: flex;
         align-items: center;
         width: 100%;
+        height: max-content;
         margin-bottom: 5px;
-        padding: 10px 15px;
+        padding: 5px;
         color: #000;
         border-radius: 5px;
+        white-space: inherit;
 
         &:hover {
             background: $red-light-main;
@@ -51,7 +63,8 @@
 
         &.is-active {
             color: #fff;
-            background: $dark-red-main-2;
+            font-weight: bold;
+            background: $red-main;
         }
     }
 }
@@ -74,6 +87,11 @@
 
         &:hover {
             box-shadow: 0px 0px 0px 5px #eee;
+
+            .task-buttons {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
 
         &:active {
@@ -81,13 +99,24 @@
         }
     }
 
-    &.completed {
+    &.completed .task-text {
         opacity: 0.8;
         text-decoration: line-through;
     }
+
+    .task-text {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .task-buttons {
+        opacity: 0;
+        transition: opacity 0.2s, transform 0.2s;
+        transform: scale(0.85);
+    }
 }
 
-.task-list-container > .task-menu .task:first-child {
+.task-menu > .task:first-child {
     margin-top: 0px;
 }
 
@@ -95,8 +124,8 @@
     width: 50px;
     height: 50px;
     position: absolute;
-    bottom: 35px;
-    right: 35px;
+    bottom: 40px;
+    right: 40px;
     border: none;
     border-radius: 50%;
 }
@@ -105,5 +134,4 @@
     font-size: 20px;
     text-align: center;
 }
-
 

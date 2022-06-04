@@ -5,7 +5,7 @@
             <h1 class="title has-text-primary">Lists</h1>
 
             <div class="list-menu">
-                <a class="list-menu-item" *ngFor="let list of lists" [routerLink]="['/lists', list._id]" routerLinkActive="is-active">
+                <a class="button is-fullwidth is-light list-menu-item" *ngFor="let list of lists" [routerLink]="['/lists', list._id]" routerLinkActive="is-active">
                     <p>{{ list.title }}</p>
                 </a>
             </div>
@@ -18,17 +18,50 @@
 
         <div class="task-list-container has-background-light">
             <div *ngIf="tasks">
-                <h1 class="title has-text-primary">Tasks</h1>
+
+                <div class="top-bar">
+                    <h1 class="title has-text-primary">Tasks</h1>
+
+                    <div class="dropdown is-hoverable is-right">
+
+                        <div class="dropdown-trigger">
+                            <button class="button">
+                                <span class="icon is-small"><i class="fas fa-cog"></i></span>
+                            </button>
+                        </div>
+
+                        <div class="dropdown-menu">
+                            <div class="dropdown-content">
+                                <a class="dropdown-item" [routerLink]="['/edit-list', selectedListId]">Edit</a>
+                                <a class="dropdown-item has-text-danger" (click)="onDeleteListClick()">Delete</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
 
                 <div class="task-menu">
                     <div class="task" *ngFor="let task of tasks" (click)="onTaskClick(task)" [ngClass]="{ 'completed': task.completed }">
-                        <p>{{ task.title }}</p>
+                        <div class="task-text">
+                            <p>{{ task.title }}</p>
+                        </div>
+
+                        <div class="task-buttons">
+                            <button class="button" [routerLink]="['/lists', selectedListId, 'edit-task', task._id]">
+                                <span class="icon is-small"><i class="fas fa-edit"></i></span>
+                            </button>
+
+                            <button class="button is-danger" style="margin-left: 5px;" (click)="onDeleteTaskClick(task._id)">
+                                <span class="icon is-small"><i class="fas fa-trash"></i></span>
+                            </button>
+                        </div>
                     </div>
 
                     <p class="empty-state-text" *ngIf="tasks.length === 0">There are no tasks in this list! Add one by pressing the add button below.</p>
                 </div>
 
-                <button class="button circle-add-button" routerLink="./new-task"><i class="fas fa-plus"></i></button>
+                <button class="button circle-add-button is-primary" routerLink="./new-task"><i class="fas fa-plus"></i></button>
+
             </div>
 
             <div *ngIf="!tasks">

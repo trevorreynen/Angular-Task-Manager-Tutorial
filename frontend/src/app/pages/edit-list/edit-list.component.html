@@ -1,0 +1,16 @@
+<div class="centered-content">
+    <div class="model-box">
+        <h1 class="title">Edit List</h1>
+
+        <p class="control is-expanded">
+            <input #listTitleInput class="input has-background-light is-medium" type="text" placeholder="Enter new list name..." />
+        </p>
+
+        <br />
+
+        <div class="field is-grouped is-grouped-right">
+            <p class="control"><a class="button is-primary has-text-weight-bold" (click)="updateList(listTitleInput.value)">Save</a></p>
+            <p class="control"><a class="button is-light" routerLink="/">Cancel</a></p>
+        </div>
+    </div>
+</div>

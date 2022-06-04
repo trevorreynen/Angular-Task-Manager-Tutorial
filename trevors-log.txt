@@ -194,3 +194,17 @@ Thu. 06/02/22', at 5:30 PM | PC
     Part 13 finished at 5:46 PM. Uploading progress to GitHub.
 
 
+
+Sat. 06/04/22', 10:32 AM | PC
+    Working on Part 14.
+
+    Within a terminal shell at /frontend/:
+        ng g c pages/edit-list
+        ng g c pages/edit-task
+
+    Part 14 finished at 1:30 PM. Took a while bc I took multiple short breaks of max 10-15min.
+
+
+
+
+
