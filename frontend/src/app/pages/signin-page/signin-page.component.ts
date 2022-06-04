@@ -1,6 +1,7 @@
-import { HttpResponse } from '@angular/common/http';
+import { HttpResponse } from '@angular/common/http'
 import { Component, OnInit } from '@angular/core'
-import { AuthService } from 'src/app/auth.service';
+import { Router } from '@angular/router'
+import { AuthService } from 'src/app/auth.service'
 
 
 @Component({
@@ -9,13 +10,18 @@ import { AuthService } from 'src/app/auth.service';
     styleUrls: ['./signin-page.component.scss']
 })
 export class SigninPageComponent implements OnInit {
-    constructor(private authService: AuthService) {}
+    constructor(private authService: AuthService, private router: Router) {}
 
     ngOnInit() {}
 
     onSigninButtonClicked(email: string, password: string) {
         this.authService.signin(email, password).subscribe((response: HttpResponse<any>) => {
-            console.log(response)
+            if (response.status === 200) {
+                // Signed in successfully.
+                this.router.navigate(['/lists'])
+            }
+
+            //console.log(response) // Shows response in console after clicking the Sign In button.
         })
     }
 }
